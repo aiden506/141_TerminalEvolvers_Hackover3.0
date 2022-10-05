@@ -16,7 +16,7 @@ import NextLink from "next/link";
 const SocialButton = ({ children, label, href }) => {
   return (
     <chakra.button
-      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      bg={useColorModeValue("blackAlpha.100", "whibluepha.100")}
       rounded={"full"}
       w={8}
       h={8}
@@ -28,7 +28,7 @@ const SocialButton = ({ children, label, href }) => {
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: useColorModeValue("blackAlpha.200", "whiteAlpha.200"),
+        bg: useColorModeValue("blackAlpha.200", "whibluepha.200"),
       }}
       target="_blank"
       rel="noopener noreferrer"
@@ -56,13 +56,13 @@ export default function Footer() {
         <Heading
           textAlign={useBreakpointValue({ base: "center", md: "left" })}
           fontFamily={"heading"}
-          color={useColorModeValue("teal.800", "white")}
+          color={useColorModeValue("blue.800", "white")}
           as="h2"
           size="lg"
         >
           <Box
             as={"span"}
-            color={useColorModeValue("teal.400", "teal.300")}
+            color={useColorModeValue("blue.400", "blue.300")}
             position={"relative"}
             zIndex={10}
             _after={{
@@ -72,24 +72,24 @@ export default function Footer() {
               bottom: 0,
               w: "full",
               h: "30%",
-              bg: useColorModeValue("teal.100", "teal.900"),
+              bg: useColorModeValue("blue.100", "blue.900"),
               zIndex: -1,
             }}
           >
-            <NextLink href="/">🤝BetterFund</NextLink>
+            <NextLink href="/">Madat Balti 🪣</NextLink>
           </Box>
         </Heading>
         <Stack direction={"row"} spacing={6}>
           <NextLink href="/">Home</NextLink>
           <Link
             href={
-              "https://github.com/harsh242/betterfund-crowdfunding-in-blockchain"
+              "https://github.com/aiden506/141_TerminalEvolvers_Hackover3.0"
             }
             isExternal
           >
             Github
           </Link>
-          <Link href={"mailto:harshbadhai242@gmail.com"} isExternal>
+          <Link href={"pimentashaun@gmail.com"} isExternal>
             Contact
           </Link>
         </Stack>
@@ -109,9 +109,9 @@ export default function Footer() {
           justify={{ base: "center", md: "space-between" }}
           align={{ base: "center", md: "center" }}
         >
-          <Text>🌐 Made while 💩 by Harsh, Hritvik , Nischal & Aaditya</Text>
+          {/* <Text>🌐 Made while 💩 by Harsh, Hritvik , Nischal & Aaditya</Text> */}
           <Stack direction={"row"} spacing={6}>
-            <SocialButton label={"Website"} href={"https://harshbadhai.me/"}>
+            {/* <SocialButton label={"Website"} href={"https://harshbadhai.me/"}>
               {" "}
               <FaGlobe />
             </SocialButton>
@@ -129,7 +129,7 @@ export default function Footer() {
               href={"https://www.instagram.com/frames_by._harsh/"}
             >
               <FaInstagram />
-            </SocialButton>
+            </SocialButton> */}
           </Stack>
         </Container>
       </Box>
